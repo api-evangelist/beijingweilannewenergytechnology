@@ -1,23 +1,63 @@
 aid: beijingweilannewenergytechnology
+
 name: Beijingweilannewenergytechnology
-description: 'Beijingweilannewenergytechnology is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Beijing Weilan New Energy Technology Co., Ltd., operating under the trade name WeLion, is a Chinese private company founded in August 2016. It specializes in the development, production, and commercialization of semi‑solid and solid‑state lithium‑ion batteries for electric vehicles and energy storage. The firm is a spin‑off from the Institute of Physics, Chinese Academy of Sciences, and is headquartered in Fangshan District, Beijing. It has partnerships with Nio and has received significant investment from Geely, Huawei, and Xiaomi.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beijingweilannewenergytechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Battery
+- Energy
+- SolidState
+- China
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beijingweilannewenergytechnology-hosts.yml
+- type: Vendors
+  url: vendors/beijingweilannewenergytechnology-vendors.yml
+- type: DomainSecurity
+  url: security/beijingweilannewenergytechnology-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/beijingweilannewenergytechnology
+  url: https://www.solidstatelion.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-27'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://equityzen.com/company/beijingweilannewenergytechnology
+    status: 403
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
